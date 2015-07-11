@@ -1,10 +1,12 @@
 var phoneNumber = prompt("Enter your phone number with dashes (i.e. XXX-XXX-XXXX)");
 
-  if (phoneNumber.charAt(3&7)==="-"){
+//string to array, then loop through
+  if (phoneNumber.charAt(3&&7)==="-" && phoneNumber.length===12){
     alert("Thanks!");
   }
   else {
     alert("False. Incorrect phone number format. Please try again.");
+    prompt("Enter your phone number with dashes (i.e. XXX-XXX-XXXX)");
   }
 
 var birthDate = prompt("Enter your birth day (i.e. xx/xx/xx)");
@@ -15,7 +17,7 @@ var birthDate = prompt("Enter your birth day (i.e. xx/xx/xx)");
   else {
     alert("Wrong format. Please try again in the correct xx/xx/xx format");
   }
-
+ //parseInt method, throw in zipcode, base 10
 
 var postal = prompt("What is your postal code? (i.e. XXXXX)");
   if (postal.length===5){
